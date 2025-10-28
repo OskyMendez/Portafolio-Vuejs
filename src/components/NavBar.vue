@@ -21,7 +21,7 @@ const navegacion= ref([
 </script>
 <style scoped>
 .navbar {
-  background-color: var(--vt-c-indigo);
+  background-color: var( --vt-c-indigo);
   color: #e6e3f1;
   padding: 0.5rem 1rem;
   align-items: center;
@@ -41,7 +41,7 @@ const navegacion= ref([
 }
 a{
     border: 1px solid;
-    border-color: hsla(0, 0%, 0%, 0.2);
+    border-color: hsla(0, 100%, 0%, 0.2);
     border-radius: 5px;
     /*Elimina la subrayada de los enlaces y elementos con clase "green" */
     text-decoration: none;
@@ -50,7 +50,7 @@ a{
 }
 a:hover{
     /*Cambia el color de fondo al pasasr el mouse sobre el enlace*/
-    background-color: hsla(180, 93%, 52%, 0.2);
+    background-color: hsla(180, 82%, 40%, 0.2);
 }
 @media(max-width: 768px) {
     .navbar-menu {
