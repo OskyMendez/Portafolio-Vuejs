@@ -1,7 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
 import DatosPersonales from './components/DatosPersonales.vue';
-
+import Educacion from './components/Educacion.vue';
 
 </script>
 
@@ -12,11 +12,14 @@ import DatosPersonales from './components/DatosPersonales.vue';
     <!--Datos Personales-->
     <DatosPersonales />
     
+    
        
 
   </header>
   <main>
+    <!-- el estilo de section se encuentra en base.css-->
     <section id="educacion"><h2>Educacion - Cursos </h2></section>
+    <Educacion />
     <section id="experiencia"><h2>Experiencia</h2></section>
     <section id="proyectos"><h2>Proyectos </h2></section>
     <section id="habilidades"><h2>Habilidades</h2></section>
@@ -27,6 +30,9 @@ import DatosPersonales from './components/DatosPersonales.vue';
 </template>
 
 <style scoped>
+educacion.{
+  color: blanchedalmond;
+}
 
 
 </style>
