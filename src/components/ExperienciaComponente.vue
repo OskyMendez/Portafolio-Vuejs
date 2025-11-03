@@ -5,116 +5,140 @@ const mostrarExtra = ref(false)
 </script>
 
 <template>
-  <section>
-    <h2>Experiencia</h2>
+  <div class="experiencia">
+    <h2 class="titulo-seccion">Experiencia Profesional</h2>
 
-    <div class="parrafo-box">
-      <p>Actualmente no cuento con experiencia formal en el área, ya que estoy finalizando el primer año de la Tecnicatura en Programación.</p>
+    <div class="experiencia-item">
+      <h3>MORDIDITAS PET SHOP</h3>
+      <span class="fecha">Año 2024</span>
+      <p>Trabajé en la creación de la página web para la pyme Pet Shop Mordiditas, desarrollando una plataforma de comercio electrónico que impulsó sus ventas.</p>
     </div>
 
-    <div class="parrafo-box">
-      <p>En este tiempo he participado en proyectos grupales junto a mis compañeros, resolviendo desafíos técnicos y colaborativos para distintos trabajos académicos.</p>
+    <div class="experiencia-item">
+      <h3>SISTEMA HOSPITALARIO - CIRUGÍA CARDIOVASCULAR</h3>
+      <span class="fecha">Año 2025</span>
+      <p>Participé en el desarrollo del sistema hospitalario para el Servicio de Cirugía Cardiovascular y Trasplante del Hospital Italiano de Mendoza, integrando soluciones digitales para mejorar la gestión médica.</p>
     </div>
 
-    <div class="parrafo-box">
-      <p>Creé mi perfil de GitHub donde subo mis proyectos personales y grupales, como muestra de mi evolución y compromiso con el aprendizaje.</p>
+    <div class="experiencia-item">
+      <h3>MIGUEL STENT - SISTEMA DE VENTAS Y CONTROL</h3>
+      <span class="fecha">Año 2025 (actual)</span>
+      <p>Actualmente estoy trabajando en el desarrollo de un sistema de ventas y control de stock para la pyme Miguel Stent, enfocado en la trazabilidad de stents cardiovasculares e integración comercial.</p>
     </div>
-
- 
-
-    <button @click="mostrarExtra = !mostrarExtra">
-      {{ mostrarExtra ? 'Ocultar detalle' : 'Ver más' }}
-      
-    </button>
-     
-
-    <div v-if="mostrarExtra" class="parrafo-box">
-      <img src="/github.png" alt="GitHub" />
-      <a href="https://github.com/OskyMendez" target="_blank">Enlace a mi GitHub</a>
-    </div>
-  </section>
+  </div>
 </template>
+
 <style scoped>
-section {
-  background-color: #2c3e50; /* Azul oscuro */
-  border: 2px solid #ffffff;
+.experiencia {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(to right, var( --vt-c-indigo) , hsla(180, 82%, 40%, 0.2););
+  background-size: 400% 400%;
+  animation: galeriaGradient 20s ease infinite;
   border-radius: 16px;
-  padding: 2rem;
-  max-width: 800px;
-  margin: 2rem auto;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  font-weight: 800;
   text-align: center;
-}
-
-/* Título con subrayado y fuente especial */
-h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
 }
 
-/* Contenedor para cada párrafo */
-.parrafo-box {
-  background-color: #3b4d61; /* Azul más claro para destacar */
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
+.experiencia-item {
+  background-color: #2c3e50;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* borde sutil */
+  border-radius: 16px; /* esquinas redondeadas */
+  padding: 20px;
+  color: #f0f0f0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra elegante */
+  backdrop-filter: blur(6px); /* efecto glassmorphism */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Texto dentro del box */
-.parrafo-box p {
+/* Efecto al pasar el mouse */
+.experiencia-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 180, 216, 0.3);
+  border: 1px solid rgba(0, 180, 216, 0.3); /* borde con brillo azul */
+}
+
+/* Detalle decorativo opcional */
+.experiencia-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #eff3f4, #eceef0);
+  opacity: 0.6;
+}
+
+.experiencia-item h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #edefef;
+  text-transform: uppercase;
+}
+
+.fecha {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.experiencia-item p {
   font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-  color: #ffffff;
-}
-
-/* Enlace GitHub */
-a {
-  color: #0c0c0c;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-a:hover {
+  line-height: 1.5;
   color: #e0e0e0;
 }
 
-/* Ícono GitHub */
-img {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
+/* Fondo animado */
+@keyframes galeriaGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-/* Contenedor del enlace */
-div {
-  justify-content: center;
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+/* Responsive */
+@media (max-width: 768px) {
+  .experiencia {
+    padding: 40px 15px;
+  }
+
+  .titulo-seccion {
+    font-size: 1.6rem;
+  }
+
+  .experiencia-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .experiencia-item p {
+    font-size: 0.95rem;
+  }
 }
 
-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: #0c0c0c;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #3b4d61;
-}
 </style>
