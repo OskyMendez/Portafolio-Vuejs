@@ -16,7 +16,7 @@ const proyectos = [
     descripcion:
       "Formé parte del equipo que desarrolló el sistema hospitalario del Servicio de Cirugía Cardiovascular y de Trasplante del Hospital Italiano de Mendoza, integrando soluciones digitales para optimizar procesos médicos y administrativos.",
     imagen: "/src/assets/cirugia-cardiovascular.jpg",
-    enlaceProyecto: "",
+    enlaceProyecto: "http://168.227.97.240/pages-login.php",
     enlaceGithub: "https://github.com/OskyMendez",
   },
   {
