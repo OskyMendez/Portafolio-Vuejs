@@ -1,28 +1,22 @@
 <script setup>
+const intereses = [
+  "Me destaco por mi capacidad para trabajar en equipo y colaborar en entornos multidisciplinarios. Me interesan profundamente los sistemas de software vinculados al área de salud, ya que desde hace años desarrollo mi carrera profesional en ese ámbito.",
+  "La música es la base de mis pasatiempos: me acompaña en el día a día y me inspira en lo personal y profesional. También disfruto de la lectura como forma de aprendizaje y desconexión.",
+  "Me apasiona todo lo relacionado con sistemas de salud, especialmente aquellos que permiten mejorar la gestión, la comunicación y la experiencia de pacientes y profesionales. Busco integrar tecnología con impacto humano.",
+  "Me desempeño en el quirófano dentro del área de salud, lo que me permite comprender en profundidad las necesidades reales del entorno hospitalario. Esta experiencia me motiva a combinar mis conocimientos técnicos con soluciones digitales que aporten valor al sistema sanitario."
+]
 </script>
 
 <template>
   <div class="intereses-contenedor">
     <ul class="contenedor-lista">
-      <li class="item">
-        Me destaco por mi capacidad para trabajar en equipo y colaborar en entornos multidisciplinarios.
-        Me interesan profundamente los sistemas de software vinculados al área de salud, ya que desde hace años desarrollo mi carrera profesional en ese ámbito.
-      </li>
-      <li class="item">
-        La música es la base de mis pasatiempos: me acompaña en el día a día y me inspira en lo personal y profesional.
-        También disfruto de la lectura como forma de aprendizaje y desconexión.
-      </li>
-      <li class="item">
-        Me apasiona todo lo relacionado con sistemas de salud, especialmente aquellos que permiten mejorar la gestión, la comunicación y la experiencia de pacientes y profesionales.
-        Busco integrar tecnología con impacto humano.
-      </li>
-      <li class="item">
-        Me desempeño en el quirófano dentro del área de salud, lo que me permite comprender en profundidad las necesidades reales del entorno hospitalario.
-        Esta experiencia me motiva a combinar mis conocimientos técnicos con soluciones digitales que aporten valor al sistema sanitario.
+      <li v-for="(texto, index) in intereses" :key="index" class="item">
+        {{ texto }}
       </li>
     </ul>
   </div>
 </template>
+
 <style scoped>
 .intereses-contenedor {
   display: flex;
