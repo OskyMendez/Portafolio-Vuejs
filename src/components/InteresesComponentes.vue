@@ -1,4 +1,5 @@
 <script setup>
+
 const intereses = [
   "Me destaco por mi capacidad para trabajar en equipo y colaborar en entornos multidisciplinarios. Me interesan profundamente los sistemas de software vinculados al área de salud, ya que desde hace años desarrollo mi carrera profesional en ese ámbito.",
   "La música es la base de mis pasatiempos: me acompaña en el día a día y me inspira en lo personal y profesional. También disfruto de la lectura como forma de aprendizaje y desconexión.",
@@ -9,6 +10,7 @@ const intereses = [
 
 <template>
   <div class="intereses-contenedor">
+  
     <ul class="contenedor-lista">
       <li v-for="(texto, index) in intereses" :key="index" class="item">
         {{ texto }}
@@ -24,7 +26,7 @@ const intereses = [
   margin: 0 auto;
   max-width: 85%;
   padding: 2rem;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: #838383; /* ← gris sólido */
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   flex-direction: column;
@@ -58,9 +60,9 @@ const intereses = [
   top: 0.6rem;
   width: 10px;
   height: 10px;
-  background-color: #58a6ff;
+  background-color: #101010;
   border-radius: 50%;
-  box-shadow: 0 0 6px #58a6ff;
+  box-shadow: 0 0 6px #0a0a0a;
 }
 
 /* Animación moderna */
@@ -74,5 +76,5 @@ const intereses = [
     opacity: 1;
   }
 }
-
 </style>
+

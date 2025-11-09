@@ -1,48 +1,71 @@
 <script setup>
+import javascript from '/public/javascript.svg'
+import python from '/public/python.svg'
+import html from '/public/html.svg'
+import java from '/public/java.svg'
+import sql from '/public/sql.svg'
+import react from '/public/react.svg'
+import vue from '/public/vue.svg'
+import node from '/public/node.svg'
+import django from '/public/django.svg'
+import bootstrap from '/public/bootstrap.svg'
+import git from '/public/git.svg'
+import docker from '/public/docker.svg'
+import Cypress from '/public/Cypress.svg'
+import figma from '/public/figma.svg'
+import visualcode from  '/public/visual.svg'
+import mongo from '/public/mongo.svg'
+import mysql from '/public/sql.svg'
+import postgre from '/public/postgresql.svg'
+import español from '/public/spanish.svg'
+import ingles from '/public/inglish.svg'
+
+
+
 const skills = [
   {
     categoria: 'Lenguajes de Programación',
     items: [
-      { nombre: 'JavaScript', nivel: 'Intermedio', icono: '/public/javascript.svg' },
-      { nombre: 'Python', nivel: 'Intermedio', icono: '/public/python.svg' },
-      { nombre: 'HTML/CSS', nivel: 'Intermedio', icono: '/public/html.svg' },
-      { nombre: 'Java', nivel: 'Intermedio', icono: '/public/java.svg' },
-      { nombre: 'SQL', nivel: 'Intermedio', icono: '/public/sql.svg' },
+      { nombre: 'JavaScript', nivel: 'Intermedio', icono: javascript },
+      { nombre: 'Python', nivel: 'Intermedio', icono: python },
+      { nombre: 'HTML/CSS', nivel: 'Intermedio', icono: html },
+      { nombre: 'Java', nivel: 'Intermedio', icono: java },
+      { nombre: 'SQL', nivel: 'Intermedio', icono: sql },
     ],
   },
   {
     categoria: 'Frameworks y Librerías',
     items: [
-      { nombre: 'React.js', nivel: 'Intermedio', icono: '/public/react.svg' },
-      { nombre: 'Vue.js', nivel: 'Intermedio', icono: '/public/vue.svg' },
-      { nombre: 'Node.js', nivel: 'Intermedio', icono: '/public/node.svg' },
-      { nombre: 'Django', nivel: 'Intermedio', icono: '/public/django.svg' },
-      { nombre: 'Bootstrap', nivel: 'Intermedio', icono: '/public/bootstrap.svg' },
+      { nombre: 'React.js', nivel: 'Intermedio', icono: react },
+      { nombre: 'Vue.js', nivel: 'Intermedio', icono: vue},
+      { nombre: 'Node.js', nivel: 'Intermedio', icono: node },
+      { nombre: 'Django', nivel: 'Intermedio', icono: django },
+      { nombre: 'Bootstrap', nivel: 'Intermedio', icono: bootstrap },
     ],
   },
   {
     categoria: 'Herramientas y Software',
     items: [
-      { nombre: 'Git', nivel: 'Avanzado', icono: '/public/git.svg' },
-      { nombre: 'Docker', nivel: 'Intermedio', icono: '/public/docker.svg' },
-      { nombre: 'Cypress', nivel: 'Intermedio', icono: '/public/Cypress.svg' },
-      { nombre: 'Figma', nivel: 'Intermedio', icono: '/public/figma.svg' },
-      { nombre: 'Visual Studio Code', nivel: 'Avanzado', icono: '/public/visual.svg' },
+      { nombre: 'Git', nivel: 'Avanzado', icono: git },
+      { nombre: 'Docker', nivel: 'Intermedio', icono: docker },
+      { nombre: 'Cypress', nivel: 'Intermedio', icono: Cypress},
+      { nombre: 'Figma', nivel: 'Intermedio', icono: figma },
+      { nombre: 'Visual Studio Code', nivel: 'Avanzado', icono: visualcode},
     ],
   },
   {
     categoria: 'Bases de Datos',
     items: [
-      { nombre: 'MongoDB', nivel: 'Avanzado', icono: '/public/mongo.svg' },
-      { nombre: 'MySQL', nivel: 'Intermedio', icono: '/public/sql.svg' },
-      { nombre: 'PostgreSQL', nivel: 'Intermedio', icono: '/public/postgresql.svg' },
+      { nombre: 'MongoDB', nivel: 'Avanzado', icono: mongo },
+      { nombre: 'MySQL', nivel: 'Intermedio', icono: mysql },
+      { nombre: 'PostgreSQL', nivel: 'Intermedio', icono: postgre },
     ],
   },
   {
     categoria: 'Idiomas',
     items: [
-      { nombre: 'Español', nivel: 'Nativo', icono: '/public/spanish.svg' },
-      { nombre: 'Inglés', nivel: 'Intermedio', icono: '/public/inglish.svg' },
+      { nombre: 'Español', nivel: 'Nativo', icono: español },
+      { nombre: 'Inglés', nivel: 'Intermedio', icono: ingles },
     ],
   },
 ]
@@ -99,7 +122,7 @@ const skills = [
   align-items: center;
   width: 120px;
   text-align: center;
-  background-color: #2c5364;
+  background-color: #838383;
   border-radius: 8px;
   padding: 0.8rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -116,7 +139,7 @@ const skills = [
 
 .skill span {
   font-size: 0.9rem;
-  color: #faf8f8;
+  color: #060606;
 }
 .skill {
   display: flex;
@@ -124,7 +147,7 @@ const skills = [
   align-items: center;
   width: 120px;
   text-align: center;
-  background-color: #2c5364;
+  background-color: #838383;
   border-radius: 8px;
   padding: 0.8rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

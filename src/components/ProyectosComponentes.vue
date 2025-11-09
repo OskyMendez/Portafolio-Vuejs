@@ -1,12 +1,14 @@
 <script setup>
-
+import imagen1 from '/src/assets/pet-shop.jpg'
+import imagen2 from '/src/assets/cirugia-cardiovascular.jpg'
+import imagen3 from '/src/assets/miguel.jpg'
 const proyectos = [
   {
     id: 1,
     titulo: "MORDIDITAS PET SHOP",
     descripcion:
       "Desarrollé la plataforma web de comercio electrónico para el Pet Shop Mordiditas, logrando un incremento del 30% en sus ventas durante el primer año.",
-    imagen: "/src/assets/pet-shop.jpg",
+    imagen: imagen1,
     enlaceProyecto: "",
     enlaceGithub: "https://github.com/OskyMendez",
   },
@@ -15,7 +17,7 @@ const proyectos = [
     titulo: "SISTEMA HOSPITALARIO - CIRUGÍA CARDIOVASCULAR",
     descripcion:
       "Formé parte del equipo que desarrolló el sistema hospitalario del Servicio de Cirugía Cardiovascular y de Trasplante del Hospital Italiano de Mendoza, integrando soluciones digitales para optimizar procesos médicos y administrativos.",
-    imagen: "/src/assets/cirugia-cardiovascular.jpg",
+    imagen: imagen2,
     enlaceProyecto: "http://168.227.97.240/pages-login.php",
     enlaceGithub: "https://github.com/OskyMendez",
   },
@@ -24,7 +26,7 @@ const proyectos = [
     titulo: "CONTROL DE STOCK - MIGUEL STENT",
     descripcion:
       "En proceso de creación de un sistema integral para la gestión de ventas de stents cardiovasculares, adaptado a las necesidades operativas de la pyme Miguel Stent. Incluye módulos de inventario, trazabilidad por lote, registro de clientes y visualización dinámica de movimientos comerciales.",
-    imagen: "/src/assets/miguel.jpg",
+    imagen: imagen3,
     enlaceProyecto: "",
     enlaceGithub: "https://github.com/OskyMendez",
   },
@@ -75,7 +77,8 @@ const proyectos = [
   gap: 30px;
   padding: 40px;
   justify-content: center;
-  background: linear-gradient(-45deg, #0f2027, #203a43, #2c3e50, #1c1c1c);
+  background:  #838383;
+
   background-size: 400% 400%;
   animation: galeriaGradient 20s ease infinite;
 }
@@ -106,12 +109,11 @@ const proyectos = [
   flex-shrink: 0;
   animation: fadeUp 0.8s ease forwards;
   opacity: 0;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  background-size: 400% 400%;
-  animation: gradientShift 15s ease infinite;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: #2c2c2c; /* gris más oscuro */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 
 .proyecto:hover {

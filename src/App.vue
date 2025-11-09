@@ -49,43 +49,40 @@ import InteresesComponente from './components/InteresesComponentes.vue';
 </template>
 
 <style scoped>
-
-
 section {
   margin: 3rem 0;
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* línea blanca moderna */
+  border-bottom: 2px solid rgba(7, 7, 7, 0.2); /* línea blanca moderna */
 }
 
 section h2 {
   text-align: center;
   font-weight: bold;
   font-size: 1.8rem;
-  color: #f0f6fc;
+  color: #050505;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 h2 {
   font-size: 2rem; /* más grande */
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(135deg, #2c3e50, #000000); /* fondo azul degradado */
-  color: #f0f6fc;
+  background: #838383; /* ← gris sólido */
+  color: #050505;
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+
 .footer {
-  
   color: #f0f6fc;
   text-align: center;
   padding: 2rem 1rem;
   font-size: 1rem;
   font-weight: 500;
- 
-  
   animation: fadeInUp 1s ease forwards;
   opacity: 0;
 }
@@ -103,17 +100,6 @@ h2 {
   color: #fbf9f9;
 }
 
-/* Animación suave */
-@keyframes fadeInUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 
 </style>
+

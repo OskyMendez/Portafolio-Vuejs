@@ -21,15 +21,28 @@ const navegacion= ref([
 </script>
 <style scoped>
 .navbar {
-  background-color: var( --vt-c-indigo);
-  color: #e6e3f1;
-  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: #0f0f0f;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
 }
+
+
+
 .navbar-item {
   text-decoration: none;
   margin-right: 1rem;
-  color: #f2e3e3;
+  color: #f9f8f8;
 
 }
 .navbar-menu{
@@ -41,7 +54,7 @@ const navegacion= ref([
 }
 a{
     border: 1px solid;
-    border-color: hsla(0, 100%, 0%, 0.2);
+    border-color: hsla(0, 0%, 100%, 0.2);
     border-radius: 5px;
     /*Elimina la subrayada de los enlaces y elementos con clase "green" */
     text-decoration: none;
@@ -50,7 +63,8 @@ a{
 }
 a:hover{
     /*Cambia el color de fondo al pasasr el mouse sobre el enlace*/
-    background-color: hsla(180, 82%, 40%, 0.2);
+    background-color: rgba(200, 200, 200, 0.2);
+
 }
 @media(max-width: 768px) {
     .navbar-menu {

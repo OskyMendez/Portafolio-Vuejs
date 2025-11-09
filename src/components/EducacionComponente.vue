@@ -70,44 +70,23 @@ const experiencias = [
 
 </template>
 <style scoped>
-:root {
-  --primary-color: #2c3e50;
-  --background-color: #2c3e50;
-  --font: sans-serif;
-  --card-bg: #2c3e50;
-  --card-shadow: rgba(0, 0, 0, 0.4);
-}
-
 body {
-  background: var(--background-color);
-  font-family: var(--font);
+  background: #d3d3d3; /* gris claro */
+  font-family: sans-serif;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  justify-content: center;   /* centra horizontal */
+  align-items: center;       /* centra vertical */
+  min-height: 100vh;         /* ocupa toda la pantalla */
 }
 
-/* Contenedor general centrado */
-.timeline-wrapper {
-  background-color: var(--card-bg);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px var(--card-shadow);
-  max-width: 900px;
-  width: 100%;
+/* Contenedor general */
+.container {
   display: flex;
-  justify-content: center;
-}
-
-/* Timeline */
-.timeline {
-  background: var(--primary-color);
-  padding: 20px;
-  border-radius: 12px;
+  flex-direction: column;    /* organiza las cards en columna */
+  align-items: center;       /* centra horizontalmente */
+  justify-content: center;   /* centra verticalmente */
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;        /* centra texto dentro */
 }
 
 /* Tarjetas */
@@ -115,12 +94,11 @@ body {
   position: relative;
   max-width: 600px;
   width: 100%;
-  margin: 20px 0;
-  padding: 30px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6); /* contorno blanco brillante */
-  border-radius: 12px; /* opcional para suavizar bordes */
+  margin: 20px auto;         /* auto centra horizontalmente */
+  padding: 50px;
+  box-shadow: 0 0 12px rgba(7, 7, 7, 0.6);
+  border-radius: 11px;
 }
-
 
 /* Línea lateral */
 .card::before {
@@ -129,37 +107,36 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #2c3e50;
-  left: -20px;
+  background-color: #000000;
+  left: 0;                   /* corregido: antes estaba -20px */
   border-radius: 10px;
 }
 
 /* Contenido de cada tarjeta */
 .info {
-  background: #2c3e50 ;
-  color: rgb(245, 244, 244);
-  border-radius: 10px;
-  padding: 20px;
+  background: #838383;
+  color: #0a0a0a;
+  border-radius: 20px;
+  padding: 25px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border: 2px solid #000000; /* contorno negro */
 }
-.fecha{
-     color: #ffffff;
+
+
+.fecha {
+  color: #030303;
   font-size: 1rem;
   font-weight: bold;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-  position: relative;
-  margin-bottom: 05px;
-
+  margin-bottom: 5px;
 }
 
-/* Títulos más blancos y brillantes */
+/* Títulos */
 .title {
-  color: #f0f0f0; /* blanco más suave */
-  font-size: 1.6rem;
+  color: #000000;
+  font-size: rem;
   font-weight: bold;
-  position: relative;
   margin-bottom: 10px;
-  text-shadow: none; /* se elimina el brillo */
+  position: relative;        /* necesario para el punto decorativo */
 }
 
 /* Punto decorativo */
@@ -168,12 +145,13 @@ body {
   position: absolute;
   width: 12px;
   height: 12px;
-  background: #2c3e50;
+  background: #000000;
   border-radius: 50%;
   border: 3px solid #ffffff;
   left: -30px;
   top: 50%;
   transform: translateY(-50%);
-  box-shadow: none; /* se elimina el brillo del punto */
 }
 </style>
+
+

@@ -37,12 +37,11 @@ const mostrarExtra = ref(false)
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background: linear-gradient(to right, var( --vt-c-indigo) , hsla(180, 82%, 40%, 0.2););
-  background-size: 400% 400%;
-  animation: galeriaGradient 20s ease infinite;
+
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(247, 246, 246, 0.3);
 }
+
 
 .titulo-seccion {
   font-size: 2rem;
@@ -57,12 +56,12 @@ const mostrarExtra = ref(false)
 }
 
 .experiencia-item {
-  background-color: #2c3e50;
+  background-color: #838383 ;
   border: 1px solid rgba(255, 255, 255, 0.1); /* borde sutil */
   border-radius: 16px; /* esquinas redondeadas */
   padding: 20px;
-  color: #f0f0f0;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* sombra elegante */
+
+  box-shadow: 0 8px 24px rgba(15, 15, 15, 0.3); /* sombra elegante */
   backdrop-filter: blur(6px); /* efecto glassmorphism */
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   position: relative;
@@ -72,8 +71,8 @@ const mostrarExtra = ref(false)
 /* Efecto al pasar el mouse */
 .experiencia-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 32px rgba(0, 180, 216, 0.3);
-  border: 1px solid rgba(0, 180, 216, 0.3); /* borde con brillo azul */
+  box-shadow: 0 12px 32px rgba(14, 14, 14, 0.3);
+  border: 1px solid rgba(13, 13, 14, 0.3); /* borde con brillo azul */
 }
 
 /* Detalle decorativo opcional */
@@ -84,7 +83,7 @@ const mostrarExtra = ref(false)
   left: 0;
   width: 100%;
   height: 4px;
-  background: linear-gradient(to right, #eff3f4, #eceef0);
+  background: linear-gradient(to right, #131313, #060606);
   opacity: 0.6;
 }
 
@@ -92,13 +91,13 @@ const mostrarExtra = ref(false)
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #edefef;
+  color: #0a0a0a;
   text-transform: uppercase;
 }
 
 .fecha {
   font-size: 0.9rem;
-  color: #cccccc;
+  color: #030303;
   margin-bottom: 12px;
   display: block;
 }
@@ -106,7 +105,7 @@ const mostrarExtra = ref(false)
 .experiencia-item p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #e0e0e0;
+  color: #0c0c0c;
 }
 
 /* Fondo animado */
